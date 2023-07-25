@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/softswiss-test/static/css/main.4a79ed61.css",
+    "main.css": "/softswiss-test/static/css/main.9895cee4.css",
     "main.js": "/softswiss-test/static/js/main.c6be326f.js",
     "static/js/787.0d48fb99.chunk.js": "/softswiss-test/static/js/787.0d48fb99.chunk.js",
     "static/media/header_content_background.png": "/softswiss-test/static/media/header_content_background.495ecfed25cd1d1d90e8.png",
@@ -16,12 +16,12 @@
     "static/media/menu.svg": "/softswiss-test/static/media/menu.16ddde905480711ffef48da0ead8b137.svg",
     "static/media/close_menu.svg": "/softswiss-test/static/media/close_menu.60d4f41347544050a7b9d2915be4e499.svg",
     "index.html": "/softswiss-test/index.html",
-    "main.4a79ed61.css.map": "/softswiss-test/static/css/main.4a79ed61.css.map",
+    "main.9895cee4.css.map": "/softswiss-test/static/css/main.9895cee4.css.map",
     "main.c6be326f.js.map": "/softswiss-test/static/js/main.c6be326f.js.map",
     "787.0d48fb99.chunk.js.map": "/softswiss-test/static/js/787.0d48fb99.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.4a79ed61.css",
+    "static/css/main.9895cee4.css",
     "static/js/main.c6be326f.js"
   ]
 }
