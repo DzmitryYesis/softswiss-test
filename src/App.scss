@@ -7,7 +7,6 @@ body {
   min-width: 360px;
 }
 
-
 @media screen and (min-width: 769px) {
   .header {
     box-sizing: border-box;
@@ -76,6 +75,97 @@ body {
     }
   }
 
+  .main-content {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 6%;
+    background: $dark-sky;
+    @include flexBox(62px, column, flex-start);
+  }
+
+  .offers {
+    @include flexBox(40px, column);
+  }
+
+  .offers__text {
+    @include LatoExtraBold(32px, normal);
+    color: $white;
+  }
+
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+  }
+
+  .card {
+    box-sizing: border-box;
+    padding: 3%;
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: 100%;
+    @include flexBox(22px, column);
+    height: 350px;
+    border-radius: 10px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    .card__title {
+      @include LatoExtraBold(74px, 100%);
+      color: $white;
+      width: 63%;
+    }
+
+    .card__info {
+      @include LatoExtraBold(26px, 120%);
+      color: $white;
+      width: 63%;
+    }
+  }
+
+    .card:nth-child(2),
+    .card:nth-child(3) {
+      flex-basis: calc(50% - 20px);
+
+      .card__title {
+        @include LatoExtraBold(46px, 100%);
+        color: $white;
+        width: 63%;
+      }
+
+      .card__info {
+        @include LatoExtraBold(24px, 120%);
+        color: $white;
+        width: 63%;
+      }
+    }
+
+  .info {
+    @include flexBox(17px, column);
+  }
+
+  .info__title {
+    @include LatoExtraBold(32px, normal);
+    color: $white;
+  }
+
+  .info__text {
+    @include LatoBold(20px, normal);
+    color: $white;
+    opacity: 0.6;
+  }
+
+  .info__button {
+    @include LatoExtraBold(20px, normal);
+    color: $yellow;
+
+    &:hover {
+      color: rgba(235, 255, 0, 0.60);
+      cursor: pointer;
+    }
+  }
+
   .button {
     padding: 14px 40px;
     border-radius: 100px;
@@ -91,6 +181,7 @@ body {
   }
 
   .button_empty {
+    width: max-content;
     padding: 14px 40px;
     border-radius: 100px;
     border: 2px solid $yellow;
@@ -100,7 +191,9 @@ body {
 
     &:hover {
       cursor: pointer;
-      background: rgba(235, 255, 0, 0.60);
+      border: 2px solid rgba(235, 255, 0, 0.60);
+      background: none;
+      color: rgba(235, 255, 0, 0.60);
     }
   }
 
@@ -164,7 +257,7 @@ body {
     background-image: url("./assets/icon/EARTH.svg"), url("./assets/icon/content_header_background.svg");
     background-repeat: no-repeat, no-repeat;
     background-size: 336px 299px, cover;
-    background-position: right , center;
+    background-position: right, center;
   }
 
   .content__title {
@@ -186,6 +279,80 @@ body {
     }
   }
 
+  .main-content {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 6%;
+    background: $dark-sky;
+    @include flexBox(55px, column, flex-start);
+  }
+
+  .offers {
+    @include flexBox(30px, column);
+  }
+
+  .offers__text {
+    @include LatoExtraBold(24px, normal);
+    color: $white;
+  }
+
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+
+  .card {
+    box-sizing: border-box;
+    padding: 3%;
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: calc(50% - 15px);
+    @include flexBox(22px, column, normal, flex-end);
+    height: 350px;
+    border-radius: 10px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    .card__title {
+      @include LatoExtraBold(40px, 100%);
+      color: $white;
+      width: 63%;
+    }
+
+    .card__info {
+      @include LatoExtraBold(16px, 120%);
+      color: $white;
+      width: 63%;
+    }
+  }
+
+  .info {
+    @include flexBox(13px, column);
+  }
+
+  .info__title {
+    @include LatoExtraBold(24px, normal);
+    color: $white;
+  }
+
+  .info__text {
+    @include LatoBold(16px, normal);
+    color: $white;
+    opacity: 0.6;
+  }
+
+  .info__button {
+    @include LatoExtraBold(16px, normal);
+    color: $yellow;
+
+    &:hover {
+      color: rgba(235, 255, 0, 0.60);
+      cursor: pointer;
+    }
+  }
+
   .button {
     padding: 14px 40px;
     border-radius: 100px;
@@ -201,6 +368,7 @@ body {
   }
 
   .button_empty {
+    width: max-content;
     padding: 7px 40px;
     border-radius: 100px;
     background: none;
@@ -210,7 +378,9 @@ body {
 
     &:hover {
       cursor: pointer;
-      background: rgba(235, 255, 0, 0.60);
+      border: 2px solid rgba(235, 255, 0, 0.60);
+      background: none;
+      color: rgba(235, 255, 0, 0.60);
     }
   }
 
@@ -255,7 +425,7 @@ body {
     background-image: url("./assets/icon/EARTH.svg"), url("./assets/icon/content_header_background.svg");
     background-repeat: no-repeat, no-repeat;
     background-size: 336px 299px, cover;
-    background-position: top , center;
+    background-position: top, center;
   }
 
   .content__title {
@@ -277,6 +447,81 @@ body {
     }
   }
 
+  .main-content {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 6%;
+    background: $dark-sky;
+    @include flexBox(50px, column, flex-start);
+  }
+
+  .offers {
+    @include flexBox(30px, column);
+  }
+
+  .offers__text {
+    @include LatoExtraBold(18px, normal);
+    color: $white;
+  }
+
+
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+
+  .card {
+    box-sizing: border-box;
+    padding: 6%;
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: 100%;
+    @include flexBox(22px, column, normal, flex-end);
+    height: 350px;
+    border-radius: 10px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    .card__title {
+      @include LatoExtraBold(40px, 100%);
+      color: $white;
+      width: 75%;
+    }
+
+    .card__info {
+      @include LatoExtraBold(16px, 120%);
+      color: $white;
+      width: 70%;
+    }
+  }
+
+  .info {
+    @include flexBox(20px, column);
+  }
+
+  .info__title {
+    @include LatoExtraBold(18px, normal);
+    color: $white;
+  }
+
+  .info__text {
+    @include LatoBold(14px, normal);
+    color: $white;
+    opacity: 0.6;
+  }
+
+  .info__button {
+    @include LatoExtraBold(14px, normal);
+    color: $yellow;
+
+    &:hover {
+      color: rgba(235, 255, 0, 0.60);
+      cursor: pointer;
+    }
+  }
+
   .button {
     padding: 7px 40px;
     border-radius: 100px;
@@ -292,6 +537,7 @@ body {
   }
 
   .button_empty {
+    width: max-content;
     padding: 7px 40px;
     background: none;
     border-radius: 100px;
@@ -301,7 +547,9 @@ body {
 
     &:hover {
       cursor: pointer;
-      background: rgba(235, 255, 0, 0.60);
+      border: 2px solid rgba(235, 255, 0, 0.60);
+      background: none;
+      color: rgba(235, 255, 0, 0.60);
     }
   }
 
