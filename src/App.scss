@@ -4,6 +4,7 @@
 body {
   margin: 0 auto;
   max-width: 1248px;
+  min-width: 360px;
 }
 
 
@@ -44,6 +45,24 @@ body {
 
   .header__mobile-menu {
     display: none;
+  }
+
+  .button {
+    padding: 14px 40px;
+    border-radius: 100px;
+    border: none;
+    background-color: $yellow;
+    @include LatoBold(22px, normal);
+    color: $black;
+  }
+
+  .button_empty {
+    padding: 14px 40px;
+    border-radius: 100px;
+    border: 2px solid $yellow;
+    @include LatoBold(22px, normal);
+    background: none;
+    color: $yellow;
   }
 
   .footer {
@@ -98,6 +117,24 @@ body {
     display: none;
   }
 
+  .button {
+    padding: 14px 40px;
+    border-radius: 100px;
+    border: none;
+    background-color: $yellow;
+    @include LatoBold(22px, normal);
+    color: $black;
+  }
+
+  .button_empty {
+    padding: 7px 40px;
+    border-radius: 100px;
+    background: none;
+    border: 2px solid $yellow;
+    @include LatoBold(16px, normal);
+    color: $yellow;
+  }
+
   .footer {
     @include flexBox(5px, column, center, center);
     background-color: $black;
@@ -128,6 +165,24 @@ body {
 
   .menu {
     display: none;
+  }
+
+  .button {
+    padding: 7px 40px;
+    border-radius: 100px;
+    border: none;
+    background-color: $yellow;
+    @include LatoBold(16px, normal);
+    color: $black;
+  }
+
+  .button_empty {
+    padding: 7px 40px;
+    background: none;
+    border-radius: 100px;
+    border: 2px solid $yellow;
+    @include LatoBold(16px, normal);
+    color: $yellow;
   }
 
   .footer {
