@@ -3,6 +3,7 @@
 
 body {
   margin: 0 auto;
+  max-width: 1248px;
 }
 
 
@@ -44,6 +45,18 @@ body {
   .header__mobile-menu {
     display: none;
   }
+
+  .footer {
+    @include flexBox(5px, column, center, center);
+    background-color: $black;
+    width: 100%;
+    height: 127px;
+  }
+
+  .footer__text {
+    @include LatoExtraBold(18px, 28px);
+    color: $yellow;
+  }
 }
 
 @media screen and (min-width: 361px) and (max-width: 768px) {
@@ -84,6 +97,18 @@ body {
   .header__mobile-menu {
     display: none;
   }
+
+  .footer {
+    @include flexBox(5px, column, center, center);
+    background-color: $black;
+    width: 100%;
+    height: 127px;
+  }
+
+  .footer__text {
+    @include LatoExtraBold(18px, 28px);
+    color: $yellow;
+  }
 }
 
 @media screen and (max-width: 360px) {
@@ -103,5 +128,17 @@ body {
 
   .menu {
     display: none;
+  }
+
+  .footer {
+    @include flexBox(5px, column, center, center);
+    background-color: $black;
+    width: 100%;
+    height: 127px;
+  }
+
+  .footer__text {
+    @include LatoExtraBold(18px, 28px);
+    color: $yellow;
   }
 }
