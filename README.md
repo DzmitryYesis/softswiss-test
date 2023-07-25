@@ -1,46 +1,59 @@
-# Getting Started with Create React App
+<p align="center">
+    <h2 align="center">Test Task for SOFTSWISS</h2>
+</p>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<p align="center">
+    Task description
+</p>
 
-## Available Scripts
+<p> The test task consists in the layout of one SPA page of a fictitious application. The design is used in Figma, all the necessary elements are in the layout: images, backgrounds, logos, button shapes, colors and fonts.
 
-In the project directory, you can run:
+Standard level: Responsive layout of all page elements using the SASS preprocessor.
 
-### `yarn start`
+Intermediate level: Responsive layout using the SASS preprocessor, implementation of interactive elements on hover, implementation of burger menu logic for mobile devices using JavaScript.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+High level: Responsive layout, implementation of interactive elements on hover, implementation of the logic of the burger menu and the "Read more" button for mobile devices without the use of JavaScript (Using CSS).
+</p>
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+<p align="center">
+    <h3 align="center">Requirements:</h3>
+</p>
+<p> 
 
-### `yarn test`
+- The layout must exactly match the layout and be fully responsive. The design includes three viewports, so you should focus on them.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- It is forbidden to use any framework or library to create a responsive design.
 
-### `yarn build`
+- When creating grids, you should use flex/grid.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- To implement the background, it is recommended to use Multiple Backgrounds.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- Images need to be optimized and if possible use SVG.
+</p>
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+<p align="center">
+<h3 align="center">Remarks:</h3>
+</p>
+<p>
 
-### `yarn eject`
+- To create a project, it is recommended to use the react-template via the npx create-react-app my-app command
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+- The layout should be implemented in the App.js component.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- Styles are recommended to be stored in the App.scss file. Using a preprocessor is optional.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+- The BEM methodology is preferred for naming classes.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+- In the implementation, you can add various data and use React Hooks.
 
-## Learn More
+- The project should be sent in an archive without the node modules folder, indicating your specific version of node and npm.</p>
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+<p align="center">
+    <h3 align="center">Stack :</h3>
+</p>
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- #### typescript
+- #### react
+- #### eslint prettier
+
+- ### [Result](https://dzmitryyesis.github.io/CodiblyTest)
