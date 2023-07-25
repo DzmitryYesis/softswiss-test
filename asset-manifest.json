@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/softswiss-test/static/css/main.4a79ed61.css",
+    "main.js": "/softswiss-test/static/js/main.c6be326f.js",
+    "static/js/787.0d48fb99.chunk.js": "/softswiss-test/static/js/787.0d48fb99.chunk.js",
+    "static/media/header_content_background.png": "/softswiss-test/static/media/header_content_background.495ecfed25cd1d1d90e8.png",
+    "static/media/EARTH.svg": "/softswiss-test/static/media/EARTH.f7523148f2c891a28c39.svg",
+    "static/media/rocket.svg": "/softswiss-test/static/media/rocket.8a3da721811c6a16306161179e17e67d.svg",
+    "static/media/card3.svg": "/softswiss-test/static/media/card3.7aeb98e70885ef2e209a10ea302d7cd0.svg",
+    "static/media/card4.svg": "/softswiss-test/static/media/card4.7c24d8757a35bb89f5a96b7d83c0c5ba.svg",
+    "static/media/card1.svg": "/softswiss-test/static/media/card1.fe258bed2134f5fdf395c85ce97953ba.svg",
+    "static/media/card2.svg": "/softswiss-test/static/media/card2.31de60d0a3a61be8d071fe2c254fa008.svg",
+    "static/media/LOGO.svg": "/softswiss-test/static/media/LOGO.4853553fa0128f0ce8f15129153b44d8.svg",
+    "static/media/hover_basket.svg": "/softswiss-test/static/media/hover_basket.2a6239bc8252fb4849712b55dba19520.svg",
+    "static/media/basket.svg": "/softswiss-test/static/media/basket.2b43d4daeea95ed5fffead296340e167.svg",
+    "static/media/menu.svg": "/softswiss-test/static/media/menu.16ddde905480711ffef48da0ead8b137.svg",
+    "static/media/close_menu.svg": "/softswiss-test/static/media/close_menu.60d4f41347544050a7b9d2915be4e499.svg",
+    "index.html": "/softswiss-test/index.html",
+    "main.4a79ed61.css.map": "/softswiss-test/static/css/main.4a79ed61.css.map",
+    "main.c6be326f.js.map": "/softswiss-test/static/js/main.c6be326f.js.map",
+    "787.0d48fb99.chunk.js.map": "/softswiss-test/static/js/787.0d48fb99.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4a79ed61.css",
+    "static/js/main.c6be326f.js"
+  ]
+}
