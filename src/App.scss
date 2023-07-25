@@ -427,6 +427,7 @@ body {
 
   .burger {
     @include flexBox(5px, column, flex-start, center);
+    box-sizing: border-box;
     padding: 5px 15px;
     position: absolute;
     top: 48px;

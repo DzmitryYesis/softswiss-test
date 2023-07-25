@@ -56,4 +56,4 @@ High level: Responsive layout, implementation of interactive elements on hover, 
 - #### react
 - #### eslint prettier
 
-- ### [Result](https://dzmitryyesis.github.io/CodiblyTest)
+- ### [Result](https://dzmitryyesis.github.io/softswiss-test)
