@@ -1,0 +1,23 @@
+@mixin flexBox($gap, $direction: row, $align: normal, $justify: normal) {
+  display: flex;
+  flex-direction: $direction;
+  align-items: $align;
+  justify-content: $justify;
+  gap: $gap;
+}
+
+@mixin LatoBold($font, $lh) {
+  font-family: Lato, sans-serif;
+  font-size: $font;
+  font-style: normal;
+  font-weight: 700;
+  line-height: $lh;
+}
+
+@mixin LatoExtraBold($font, $lh){
+  font-family: Lato, sans-serif;
+  font-size: $font;
+  font-style: normal;
+  font-weight: 800;
+  line-height: $lh;
+}
