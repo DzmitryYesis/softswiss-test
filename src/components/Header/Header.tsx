@@ -1,6 +1,7 @@
 import '../../App.scss'
 import {logo, basket, menu, hover_basket, close_menu} from '../../assets/icon';
 import {useState} from 'react';
+import cn from 'classnames';
 
 export const Header = () => {
 
@@ -29,6 +30,13 @@ export const Header = () => {
             </div>
             <img src={menuIcon} className={'header__mobile-menu'} alt={'mobile-menu'}
                  onClick={menuHandler}/>
+            <div className={cn('burger', {
+                ['burger_active']: isOpenMenu
+            })}>
+                <span className={'burger__text'}>Home</span>
+                <span className={'burger__text'}>Products</span>
+                <span className={'burger__text'}>Basket</span>
+            </div>
         </div>
     )
 }

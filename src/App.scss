@@ -46,6 +46,10 @@ body {
     display: none;
   }
 
+  .burger {
+    display: none;
+  }
+
   .content {
     box-sizing: border-box;
     width: 100%;
@@ -124,22 +128,22 @@ body {
     }
   }
 
-    .card:nth-child(2),
-    .card:nth-child(3) {
-      flex-basis: calc(50% - 20px);
+  .card:nth-child(2),
+  .card:nth-child(3) {
+    flex-basis: calc(50% - 20px);
 
-      .card__title {
-        @include LatoExtraBold(46px, 100%);
-        color: $white;
-        width: 63%;
-      }
-
-      .card__info {
-        @include LatoExtraBold(24px, 120%);
-        color: $white;
-        width: 63%;
-      }
+    .card__title {
+      @include LatoExtraBold(46px, 100%);
+      color: $white;
+      width: 63%;
     }
+
+    .card__info {
+      @include LatoExtraBold(24px, 120%);
+      color: $white;
+      width: 63%;
+    }
+  }
 
   .info {
     @include flexBox(17px, column);
@@ -246,6 +250,10 @@ body {
   }
 
   .header__mobile-menu {
+    display: none;
+  }
+
+  .burger {
     display: none;
   }
 
@@ -399,6 +407,7 @@ body {
 
 @media screen and (max-width: 360px) {
   .header {
+    position: relative;
     box-sizing: border-box;
     width: 100%;
     height: 48px;
@@ -414,6 +423,32 @@ body {
 
   .menu {
     display: none;
+  }
+
+  .burger {
+    @include flexBox(5px, column, flex-start, center);
+    padding: 5px 15px;
+    position: absolute;
+    top: 48px;
+    left: 0;
+    width: 100%;
+    height: auto;
+    background-color: $black;
+    visibility: hidden;
+
+    &_active {
+      visibility: visible;
+    }
+  }
+
+
+  .burger__text {
+    @include LatoBold(20px, 100%);
+    color: $white;
+
+    &:hover {
+      color: $violet;
+    }
   }
 
   .content {
