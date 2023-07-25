@@ -1,16 +1,22 @@
 import '../../App.scss'
-import {logo, basket, menu, hover_basket} from '../../assets/icon';
+import {logo, basket, menu, hover_basket, close_menu} from '../../assets/icon';
 import {useState} from 'react';
 
 export const Header = () => {
 
     const [isHoverBasket, setIsHoverBasket] = useState(false)
+    const [isOpenMenu, setIsOpenMenu] = useState(false)
 
     const mouseHandler = () => {
         setIsHoverBasket(!isHoverBasket)
     }
 
+    const menuHandler = () => {
+        setIsOpenMenu(!isOpenMenu)
+    }
+
     const currentBasket = isHoverBasket ? hover_basket : basket
+    const menuIcon = isOpenMenu ? close_menu : menu
 
     return (
         <div className={'header'}>
@@ -21,7 +27,8 @@ export const Header = () => {
                 <img src={currentBasket} alt={'basket'} className={'menu__basket'}
                      onMouseOver={mouseHandler} onMouseOut={mouseHandler}/>
             </div>
-            <img src={menu} className={'header__mobile-menu'} alt={'mobile-menu'}/>
+            <img src={menuIcon} className={'header__mobile-menu'} alt={'mobile-menu'}
+                 onClick={menuHandler}/>
         </div>
     )
 }
