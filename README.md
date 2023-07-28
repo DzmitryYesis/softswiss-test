@@ -20,7 +20,7 @@ High level: Responsive layout, implementation of interactive elements on hover, 
 </p>
 <p> 
 
-- The layout must exactly match the layout and be fully responsive. The design includes three viewports, so you should focus on them.
+- The layout must exactly match the layout and be fully responsive. The design includes three viewports(360px, 768px, 1248px), so you should focus on them.
 
 - It is forbidden to use any framework or library to create a responsive design.
 
